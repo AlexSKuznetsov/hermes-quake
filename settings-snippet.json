@@ -1,0 +1,38 @@
+{
+    "//": "Reference snippet showing the three pieces install.ps1 merges into your settings.json. Do not copy blindly - use install.ps1.",
+    "profiles": {
+        "list": [
+            {
+                "name": "Hermes Console",
+                "guid": "{586A99D2-0A4A-44E2-85D4-DA97776B93A1}",
+                "commandline": "%LOCALAPPDATA%\\hermes\\hermes-agent\\venv\\Scripts\\hermes.exe",
+                "startingDirectory": "%USERPROFILE%",
+                "background": "#0C0C1E",
+                "opacity": 85,
+                "padding": "8",
+                "scrollbarState": "hidden",
+                "hidden": false,
+                "icon": "%LOCALAPPDATA%\\hermes\\hermes-agent\\web\\public\\favicon.ico",
+                "font": { "face": "0xProto Nerd Font", "size": 12 }
+            }
+        ]
+    },
+    "actions": [
+        {
+            "id": "User.HermesQuakeToggle",
+            "keys": "alt+`",
+            "name": "Toggle Hermes Quake Drop-down",
+            "command": {
+                "action": "globalSummon",
+                "name": "_quake",
+                "dropdownDuration": 200,
+                "toggleVisibility": true,
+                "monitor": "toMouse",
+                "desktop": "toCurrent"
+            }
+        }
+    ],
+    "keybindings": [
+        { "id": "User.HermesQuakeToggle" }
+    ]
+}
