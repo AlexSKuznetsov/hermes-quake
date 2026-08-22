@@ -6,6 +6,8 @@ Press **Alt + \`** anywhere: a translucent terminal slides down from the top of
 your screen with a live Hermes session. Press it again and it disappears,
 keeping its state. Your agent stays warm between drops.
 
+![Hermes Quake drop-down in action](docs/screenshot.png)
+
 > Built and tested against Windows Terminal 1.24 on Windows 11. Uses only
 > native Windows Terminal features - no AutoHotkey, no extra processes.
 
